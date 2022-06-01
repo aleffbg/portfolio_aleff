@@ -1,0 +1,778 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    overflow-x: hidden;
+}
+
+/*----------------------------------------*/
+/*NAVBAR*/
+/*----------------------------------------*/
+a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: aqua;
+}
+
+.logo {
+    font-size: 24px;
+    letter-spacing: 3px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    height: 8vh;
+}
+
+.logo span {
+    color: aqua;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-left: 32px;
+}
+
+.nav-list li:hover {
+    font-weight: bold;
+}
+
+/*----------------------------------------*/
+/*HEADER*/
+/*----------------------------------------*/
+.max-width {
+    margin-bottom: 50px;
+}
+
+.banner1 {
+    height: 80vh;
+    width: 113vw;
+    background-color: black;
+    background-image: url('./img/fundo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding: 0 175px;
+
+}
+
+h1 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: aqua;
+    font-size: 50px;
+    letter-spacing: 4px;
+}
+
+.text2 {
+    font-size: 30px;
+    margin-top: -20px;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.text2 span {
+    color: aqua;
+}
+
+.social-media {
+    margin-left: -2px;
+    margin-top: 1rem;
+    display: flex;
+    border: solid 1px;
+    border-color: aqua;
+}
+
+.social-media a {
+    margin-top: -1px;
+    margin-bottom: -1px;
+    text-decoration: none;
+    color: white;
+    padding: 1rem 1rem;
+    min-width: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s ease-in-out;
+}
+
+.social-media a:hover {
+    background-color: aqua;
+    color: black;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+/*----------------------------------------*/
+/*LINHA SEPARANDO DIVS*/
+/*----------------------------------------*/
+.linha hr {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-top: 1px solid aqua;
+
+}
+
+/*----------------------------------------*/
+/*BANNER2*/
+/*----------------------------------------*/
+section {
+    padding: 60px 0;
+}
+
+.about {
+    font-family: 'Poppins';
+}
+
+.about .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .title {
+    font-family: 'Poppins';
+    color: black;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+section .title::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: aqua;
+    transform: translateX(-50%);
+}
+
+section .title::after {
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    background: white;
+    color: black;
+    padding: 5px;
+    transform: translateX(-50%);
+}
+
+.about .title::after {
+    content: "who am I";
+}
+
+.about .about-content .left {
+    width: 45%;
+}
+
+.about .about-content .right {
+    width: 55%;
+}
+
+.about .about-content .right .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-left: -70px;
+}
+
+.about .about-content .right p {
+    text-align: left;
+    margin-left: -70px;
+    margin-right: 120px;
+}
+
+.about .about-content .right a {
+    color: black;
+    display: inline-block;
+    background: white;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 5px 20px;
+    margin-top: 10px;
+    border: 1px solid aqua;
+    transition: all 0.3s ease;
+    margin-left: -70px;
+    font-weight: bold;
+}
+
+.about .about-content .right a:hover {
+    background: aqua;
+    color: black;
+}
+
+.about .about-content .left img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.left img {
+    margin-left: 170px;
+}
+
+.text {
+    text-align: left;
+    color: black;
+    font-weight: bold;
+}
+
+p {
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*----------------------------------------*/
+/*BANNER3*/
+/*----------------------------------------*/
+.skills .title {
+    color: white;
+}
+
+.skills-content .text {
+    color: black;
+    text-align: center;
+}
+
+.skills {
+    background: black;
+    color: white;
+}
+
+.skills .skills-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills .title::after {
+    background: black;
+    color: white;
+    content: "tools";
+}
+
+.skills .skills-content .card {
+    width: calc(33% - 20%);
+    background-color: white;
+    text-align: center;
+    padding: 20px 25px;
+    cursor: pointer;
+    margin: 10px;
+    transition: all 0.3s ease;
+}
+
+.skills .skills-content .card:hover {
+    background: black;
+}
+
+.skills .skills-content .card .box {
+    transition: all 0.3s ease;
+}
+
+.skills .skills-content .card:hover .box {
+    transform: scale(1.05);
+}
+
+.skills .skills-content .card ion-icon {
+    color: black;
+}
+
+.skills .skills-content .card:hover ion-icon {
+    color: aqua;
+}
+
+.skills .skills-content .card:hover div {
+    color: aqua;
+}
+
+.skills h3 {
+    text-align: center;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+/*----------------------------------------*/
+/*BANNER4*/
+/*----------------------------------------*/
+#projects .max-width {
+    width: 100%;
+    height: 100vh;
+    background: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -40px;
+    margin-top: -20px;
+}
+
+#projects .max-width h2 {
+    margin-top: -500px;
+}
+
+#projects .max-width input[type=radio] {
+    display: none;
+}
+
+#projects .max-width .card1 {
+    position: absolute;
+    width: 40%;
+    height: 80%;
+    left: 0;
+    right: 0;
+    margin: 40px auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    transition: 0.4s ease;
+    cursor: pointer;
+    margin-top: 135px;
+}
+
+#projects .max-width .card1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+
+#projects .max-width .card1 h1 {
+    position: absolute;
+    z-index: 9;
+    color: white;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    font-size: 2rem;
+    margin-top: 100px;
+    background: black;
+    border-radius: 6px;
+}
+
+#projects .max-width .card1 button {
+    position: absolute;
+    z-index: 9;
+    background: black;
+    color: white;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    margin-top: 530px;
+    padding: 10px 20px;
+    border-radius: 3px;
+    border: 1px solid aqua;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Poppins';
+    transition: all 0.5s;
+}
+
+#projects .max-width .card1 button:hover {
+    background: aqua;
+    color: black;
+    border: white;
+    font-weight: bold;
+    transition: 0.5s;
+    text-shadow: none;
+    transform: scale(1.2);
+}
+
+#projects .max-width .cards {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#item-1:checked~.cards #song-3,
+#item-2:checked~.cards #song-1,
+#item-3:checked~.cards #song-2 {
+    transform: translateX(-40%) scale(0.8);
+    opacity: 0.4;
+    z-index: 0;
+}
+
+#item-1:checked~.cards #song-2,
+#item-2:checked~.cards #song-3,
+#item-3:checked~.cards #song-1 {
+    transform: translateX(40%) scale(0.8);
+    opacity: 0.4;
+    z-index: 0;
+}
+
+#item-1:checked~.cards #song-1,
+#item-2:checked~.cards #song-2,
+#item-3:checked~.cards #song-3 {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+    z-index: 1;
+}
+
+/*----------------------------------------*/
+/*BANNER5*/
+/*----------------------------------------*/
+#contact .max-width {
+    width: 100%;
+    height: 80vh;
+    background: black;
+    margin-bottom: -60px;
+}
+
+#contact .max-width .contact-content {
+    width: 80%;
+    height: 60vh;
+    margin: 0 auto;
+    padding: 60px 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#contact .contact-content .contact-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-weight: normal;
+}
+
+#contact .contact-content .contact-left h4 {
+    font-size: 30px;
+}
+
+#contact .contact-content .linha {
+    width: 270px;
+    height: 3px;
+    background: aqua;
+    margin-top: -35px;
+    margin-bottom: 10px;
+}
+
+#contact .contact-content .contact-left ion-icon {
+    font-size: 25px;
+    padding: 20px 0;
+}
+
+#contact .contact-content .contact-left span {
+    padding: 5px 0;
+}
+
+#contact .contact-content .contact-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+#contact .contact-content .contact-right button {
+    border-radius: 10px;
+    border: 1px solid aqua;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Poppins';
+    transition: all 0.5s;
+    background: none;
+    color: white;
+    width: 20%;
+}
+
+#contact .contact-content .contact-right button:hover {
+    background: aqua;
+    color: black;
+    border: white;
+    font-weight: bold;
+    transition: 0.5s;
+    text-shadow: none;
+    transform: scale(1.2);
+}
+
+#contact .contact-content .contact-right h4 {
+    font-size: 30px;
+}
+
+#contact .contact-content .contact-right input[type=email],
+#contact .contact-content .contact-right input[type=text] {
+    border-radius: 10px;
+    border: 1px solid aqua;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Poppins';
+    outline: none;
+}
+
+#contact .contact-content .contact-right textarea {
+    width: 90%;
+    height: 110px;
+    border-radius: 10px;
+    border: 1px solid aqua;
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Poppins';
+    outline: none;
+    resize: none;
+    padding: 15px 20px;
+}
+
+#contact .contact-content .contact-center h4 {
+    font-size: 30px;
+    margin-right: 65px;
+    margin-left: -65px;
+}
+
+#contact .contact-content .contact-center .linha {
+    margin-right: 65px;
+    margin-left: -65px;
+}
+
+#contact .contact-content .contact-center ion-icon {
+    font-size: 30px;
+    padding: 10px 15px;
+    margin-left: -80px;
+    margin-right: 80px;
+}
+
+/*----------------------------------------*/
+/*RODAPÉ*/
+/*----------------------------------------*/
+footer {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background: black;
+    text-align: center;
+    font-size: 15px;
+}
+
+/*----------------------------------------*/
+/*MENU HAMBURGUER*/
+/*----------------------------------------*/
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: white;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+/*----------------------------------------*/
+/*RESPONSIVO*/
+/*----------------------------------------*/
+@media screen and (max-width: 1280px) {
+    #projects .max-width .card1 h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    #contact .max-width {
+        width: 100%;
+        height: 1200px;
+    }
+
+    #contact .max-width .contact-content {
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #projects .max-width {
+        margin-left: -40px;
+        margin-bottom: -40px;
+    }
+
+    #projects .max-width .cards {
+        width: 600px;
+        height: 600px;
+    }
+
+    #contact .contact-content {
+        margin-bottom: -200px;
+    }
+
+    #contact .contact-content .contact-left {
+        margin-right: 120px;
+    }
+
+    #contact .contact-content .contact-center {
+        margin-left: 40px;
+    }
+
+    #contact .contact-content .contact-right {
+        margin-right: 120px;
+        margin-bottom: -380px;
+    }
+
+    #contact .contact-content .contact-right button {
+        width: 30%;
+    }
+
+    #contact .contact-content .contact-right input[type=email],
+    #contact .contact-content .contact-right input[type=text] {
+        width: 94%;
+    }
+
+    #contact .contact-content .contact-right textarea {
+        width: 94%;
+    }
+}
+
+@media (max-width: 1104px) {
+    .about .about-content .left img {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 947px) {
+    .max-width {
+        max-width: 800px;
+        padding: 0px 50px;
+    }
+
+    .about .about-content .left img {
+        margin-left: 10px;
+    }
+
+    .about .about-content .column {
+        width: 50%;
+    }
+
+    .about .about-content .left {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 40px;
+    }
+
+    .about .about-content .right a {
+        align-items: center;
+        margin-left: 125px;
+    }
+
+    .about .about-content .right {
+        flex: 100%;
+    }
+
+    .about .about-content .right p {
+        text-align: center;
+        margin-left: 3px;
+        margin-right: -20px;
+    }
+
+    .about .about-content .right .text {
+        text-align: center;
+        margin-left: 25px;
+    }
+
+    .banner1 {
+        align-items: center;
+        background: black;
+        margin-left: -35px;
+    }
+
+    .skills .skills-content .card {
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+
+    #projects .max-width .card1 button {
+        margin-top: 460px;
+    }
+}
+
+@media (max-width: 999px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-list {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: black;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .nav-list.active {
+        transform: translateX(0);
+    }
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+    opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+}
